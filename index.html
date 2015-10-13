@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Identity by HTML5 UP
+	Aerial by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
@@ -9,47 +9,42 @@
 		<title>Egor Masalitin</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
-	<body class="is-loading">
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-							<h1>Egor Masalitin</h1>
-							<p>Developer</p>
-						</header>
-						<footer>
-							<ul class="icons">
-								<li><a href="mailto:emasalitin@gmail.com" class="fa fa-envelope" target="_top">Email</a></li>
-								<li><a href="https://ua.linkedin.com/in/egormasalitin" class="fa fa-linkedin-square" target="_blank">Linked In</a></li>
-								<li><a href="https://www.facebook.com/egor.masalitin" class="fa-facebook" target="_blank">Facebook</a></li>
+				<!-- Header -->
+					<header id="header">
+						<h1>Egor Masalitin</h1>
+						<p>Developer</p>
+						<nav>
+							<ul>
+								<li><a href="https://ua.linkedin.com/in/egormasalitin" target="_blank" class="icon fa-linkedin-square"><span class="label">Linked In</span></a></li>
+								<li><a href="https://www.facebook.com/egor.masalitin" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="mailto:emasalitin@gmail.com" target="_top" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 							</ul>
-						</footer>
-					</section>
+						</nav>
+					</header>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Egor Masalitin</li>
-							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
+						<span class="copyright">&copy; Egor Masalitin. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
 					</footer>
 
 			</div>
-
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>
